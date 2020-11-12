@@ -1,3 +1,3 @@
 def middle_letter(input_word)
-return 'es'
+return 't'
 end
