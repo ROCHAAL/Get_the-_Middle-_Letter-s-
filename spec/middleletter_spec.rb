@@ -3,11 +3,25 @@ require 'middle_letter'
 
 describe ' middle_letter' do
   it 'takes a word and if the word length is odd it returns the middle letter'do
-    expect(middle_letter('t')).to eq('t')
+      expect(middle_letter('t')).to eq('t')
   end
-it 'takes a word if the word length is odd it returns the  middle letter'do
-  expect(middle_letter('cat')).to eq('a')
+
+    it 'takes a word if the word length is odd it returns the  middle letter'do
+        expect(middle_letter('cat')).to eq('a')
   end
+
+    it 'takes a word if the word length is even it returns the 2 middle letters'do
+        expect(middle_letter('flower')).to eq('ow')
+  end
+
+    it 'takes a word if the word length is even it returns the 2 middle letters'do
+        expect(middle_letter('agriculturalists')).to eq('tu')
+
+  end
+      it 'takes a word if the word length is odd it returns the  middle letter'do
+      expect(middle_letter('acknowledgement')).to eq('e')
+    end 
+
 end
 
 
